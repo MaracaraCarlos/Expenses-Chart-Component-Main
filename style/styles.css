@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+  /* Primary */
+  --Soft-red: #ec775f;
+  --Soft-ligth-red: #ec775f86;
+  --Cyan: #76b5bc;
+  --Soft-cyan: #76b5bc86;
+  /* Secondary */
+  --Dark-brown: #382314;
+  --Medium-brown: #93867b;
+  --Cream: #f8e9dd;
+  --Very-pale-orange: #fffaf5;
+}
+/* Reset */
+*,
+html {
+  padding:      0;
+  margin:       0;
+  box-sizing:   border-box;
+  font-family: 'DM Sans', sans-serif;
+  font-size:    18px;
+}
+/* Main style */
+body {
+  height:           100vh;
+  display:          flex;
+  flex-direction:   column;
+  justify-content:  center;
+  align-items:      center;
+  background-color: var(--Cream);
+}
+header {
+  width:            450px;
+  height:           80px;
+  display:          flex;
+  justify-content:  space-between;
+  align-items:      center;
+  padding-inline:   20px;
+  color:            var(--Very-pale-orange);
+  background-color: var(--Soft-red);
+  border-radius:    15px;
+  color: var(--Very-pale-orange);
+}
+.balance p {
+  font-size: .7rem;
+}
+.balance h3 {
+  padding-top: 5px;
+  font-size: 1.3rem;
+}
+.container {
+  display:          flex;
+  flex-direction:   column;
+  width:            450px;
+  margin-top:       20px;
+  padding:          20px;
+  background-color: var(--Very-pale-orange);
+  border-radius:    15px;
+}
+.container > h3 {
+  font-size: 1.5rem;
+  color: var(--Dark-brown);
+}
+.footer {
+  border-top: solid 1px var(--Cream);
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.this_month > p {
+  color: var(--Medium-brown);
+  font-size: .7rem;
+}
+.this_month > h2 {
+  color: var(--Dark-brown);
+  font-size: 1.7rem;
+}
+.last_month {
+  padding-top: 17px;
+  text-align: right;
+}
+.percent {
+  font-weight: 700;
+  color: var(--Dark-brown);
+  font-size: .8rem;
+}
+.last {
+  color: var(--Medium-brown);
+  font-size: .7rem;
+}
+@media screen and (max-width: 490px) {
+  header,
+  .container {
+    min-width: 375px;
+    width: 90vw;
+  }
+}
