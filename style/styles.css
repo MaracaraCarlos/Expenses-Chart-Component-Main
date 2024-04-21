@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
 :root {
-  /* Primary */
   --Soft-red: #ec775f;
-  --Soft-ligth-red: #ec775f86;
   --Cyan: #76b5bc;
-  --Soft-cyan: #76b5bc86;
-  /* Secondary */
   --Dark-brown: #382314;
   --Medium-brown: #93867b;
   --Cream: #f8e9dd;
   --Very-pale-orange: #fffaf5;
 }
-/* Reset */
 *,
 html {
   padding:      0;
@@ -21,7 +15,6 @@ html {
   font-family: 'DM Sans', sans-serif;
   font-size:    18px;
 }
-/* Main style */
 body {
   height:           100vh;
   display:          flex;
